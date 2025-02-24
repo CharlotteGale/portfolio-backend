@@ -64,7 +64,7 @@ namespace portfolio_backend.Services
         {
             var clientId = _configuration["Gmail:ClientId"];
             var clientSecret = _configuration["Gmail:ClientSecret"];
-            var redirectUri = "http://localhost:5000/oauth2callback";
+            var redirectUri = "https://charlottegale.dev/oauth2callback";
 
             var initializer = new GoogleAuthorizationCodeFlow.Initializer
             {
