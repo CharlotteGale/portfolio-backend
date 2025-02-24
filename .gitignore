@@ -24,7 +24,6 @@ node_modules/
 
 # ASP.NET Core / Docker
 wwwroot/
-Dockerfile
 docker-compose.override.yml
 
 # Logs
