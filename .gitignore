@@ -1,0 +1,36 @@
+# .NET Core
+bin/
+obj/
+
+# User secrets file (Do not commit sensitive data)
+credentials.json
+
+# Configuration files containing sensitive data
+appsettings.Development.json
+appsettings.Production.json
+appsettings.json
+
+# Mac/Linux specific
+.DS_Store
+Thumbs.db
+
+# Visual Studio specific files
+.vs/
+.vscode/
+.idea/
+
+# Dependency directories
+node_modules/
+
+# ASP.NET Core / Docker
+wwwroot/
+Dockerfile
+docker-compose.override.yml
+
+# Logs
+*.log
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
