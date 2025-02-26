@@ -23,7 +23,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("https://www.charlottegale.dev", "https://charlottegale.dev")
+        policy.WithOrigins(
+            "https://www.charlottegale.dev", 
+            "https://charlottegale.dev",
+            "http://localhost:5173")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
@@ -40,9 +43,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowFrontend");
-
 app.UseRouting();
+
+app.UseCors("AllowFrontend");
 
 app.UseAuthorization();
 
