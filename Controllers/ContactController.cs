@@ -16,7 +16,7 @@ namespace portfolio_backend.Controllers
         public ContactController(GmailOAuth gmailOAuth)
         {
             _gmailOAuth = gmailOAuth;
-            _gmailService = new GmailService(_gmailOAuth);
+            _gmailService = new GmailService(gmailOAuth);
         }
 
         [HttpPost]

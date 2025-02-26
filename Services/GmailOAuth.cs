@@ -29,7 +29,7 @@ namespace portfolio_backend.Services
             var credPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".credentials/gmail-dotnet.json");
 
             // testing environment uri = "http://localhost:5000/oauth2callback"
-            // deployment environment uri = "https://charlottegale.dev/oauth2callback"
+            // deployment environment uri = "https://portfolio-backend-htjt.onrender.com/api/contact/oauth2callback"
 
             if (!string.IsNullOrEmpty(code))
             {
@@ -64,7 +64,7 @@ namespace portfolio_backend.Services
         {
             var clientId = _configuration["Gmail:ClientId"];
             var clientSecret = _configuration["Gmail:ClientSecret"];
-            var redirectUri = "https://charlottegale.dev/oauth2callback";
+            var redirectUri = "https://portfolio-backend-htjt.onrender.com/api/contact/oauth2callback";
 
             var initializer = new GoogleAuthorizationCodeFlow.Initializer
             {
